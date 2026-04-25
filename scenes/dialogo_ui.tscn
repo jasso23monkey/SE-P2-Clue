@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://cb5dw4k3u8acc"]
+
+[ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="1_3r1ne"]
+[ext_resource type="Script" uid="uid://cl77ff4a0tk1t" path="res://scripts/dialogo_ui.gd" id="1_jdcej"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3r1ne"]
+bg_color = Color(0.6509804, 0.50980395, 0.05882353, 0.74509805)
+corner_radius_top_right = 45
+corner_detail = 1
+
+[node name="DialogoUi" type="Control" unique_id=757542869]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jdcej")
+
+[node name="Dialogo" type="PanelContainer" parent="." unique_id=2054291892]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -160.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_3r1ne")
+theme_type_variation = &"panel_dialogo"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo" unique_id=1596096708]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_3r1ne")
+theme_type_variation = &"dialogos"
+bbcode_enabled = true
+text = "Pruebita [shake]xd dí[/shake]
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nombre" type="PanelContainer" parent="." unique_id=1331485155]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -218.0
+offset_right = 303.0
+offset_bottom = -160.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3r1ne")
+
+[node name="Label" type="Label" parent="Nombre" unique_id=2130183972]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_3r1ne")
+theme_type_variation = &"HeaderMedium"
+text = "Don Amado    "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=102212813]
+position = Vector2(1119.9999, 601.00006)
+scale = Vector2(1.8666667, 1.0666667)
+polygon = PackedVector2Array(0, 0, 10, 15, 0, 30)

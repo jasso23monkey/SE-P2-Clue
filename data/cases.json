@@ -1,0 +1,52 @@
+[
+  {
+	"id": "01",
+	"culpable": "casilda",
+	"arma_real": "pista_daga_plata",
+	"causa_muerte": "herida punzante",
+	"escena_crimen": "despacho",
+	"ubicacion_arma": "despacho",
+	"pistas_falsas": ["pista_crucifijo_bronce", "pista_pistola_vapor"],
+	"notas": "Casilda utilizó la daga decorativa del escritorio. La precisión del ataque sugiere conocimiento del lugar."
+  },
+  {
+	"id": "02",
+	"culpable": "calixto",
+	"arma_real": "pista_crucifijo_bronce",
+	"causa_muerte": "traumatismo craneal",
+	"escena_crimen": "capilla",
+	"ubicacion_arma": "capilla",
+	"pistas_falsas": ["pista_pistola_vapor", "pista_soga_ixtle"],
+	"notas": "El golpe fue contundente. El crucifijo de bronce fue usado como un objeto romo."
+  },
+  {
+	"id": "03",
+	"culpable": "eulalio",
+	"arma_real": "pista_pistola_vapor",
+	"causa_muerte": "quemadura por presión",
+	"escena_crimen": "alambiques",
+	"ubicacion_arma": "alambiques",
+	"pistas_falsas": ["pista_soga_ixtle", "pista_coa_jima"],
+	"notas": "Una falla mecánica provocada. La pistola de vapor es una herramienta avanzada que solo un ingeniero domina."
+  },
+  {
+	"id": "04",
+	"culpable": "basilio",
+	"arma_real": "pista_soga_ixtle",
+	"causa_muerte": "asfixia",
+	"escena_crimen": "zaguan",
+	"ubicacion_arma": "zaguan",
+	"pistas_falsas": ["pista_coa_jima", "pista_daga_plata"],
+	"notas": "Basilio conoce bien los nudos de carga. La soga de ixtle es común en las labores de transporte."
+  },
+  {
+	"id": "05",
+	"culpable": "juan",
+	"arma_real": "pista_coa_jima",
+	"causa_muerte": "corte profundo",
+	"escena_crimen": "caballerizas",
+	"ubicacion_arma": "caballerizas",
+	"pistas_falsas": ["pista_daga_plata", "pista_crucifijo_bronce"],
+	"notas": "Un corte limpio, característico de quien trabaja el agave diariamente con la coa."
+  }
+]

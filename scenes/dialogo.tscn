@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://52qw0ufecuid"]
+
+[ext_resource type="Script" uid="uid://cmhe6neob47ya" path="res://scripts/dialogo.gd" id="1_4dly5"]
+[ext_resource type="Texture2D" uid="uid://cose0xa1c88m" path="res://assets/sprites/backgrounds/patio_luz.jpeg" id="1_qv0hs"]
+[ext_resource type="Texture2D" uid="uid://dwpg8yrm7ebno" path="res://assets/sprites/backgrounds/patio.png" id="2_hbhh0"]
+[ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="3_f60r7"]
+[ext_resource type="Texture2D" uid="uid://dd6r3d23b5qu6" path="res://assets/sprites/characters/amado_1.png" id="4_f60r7"]
+[ext_resource type="PackedScene" uid="uid://cb5dw4k3u8acc" path="res://scenes/dialogo_ui.tscn" id="5_dc3ot"]
+
+[node name="Dialogo" type="Node2D" unique_id=832719152]
+script = ExtResource("1_4dly5")
+
+[node name="PatioLuz" type="Sprite2D" parent="." unique_id=415426835]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(844.4167, 290.49994)
+scale = Vector2(1.2096355, 1.2148439)
+texture = ExtResource("1_qv0hs")
+
+[node name="Patio" type="Sprite2D" parent="." unique_id=1352707719]
+visible = false
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(848.15967, 289.00003)
+scale = Vector2(1.2393618, 1.2393618)
+texture = ExtResource("2_hbhh0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1612236772]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1302843588]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -227.95435
+offset_top = -267.93393
+offset_right = 227.95435
+offset_bottom = 477.93396
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_f60r7")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer" unique_id=379022229]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("4_f60r7")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="DialogoUi" parent="CanvasLayer" unique_id=757542869 instance=ExtResource("5_dc3ot")]
+
+[connection signal="cambio_de_personaje" from="CanvasLayer/DialogoUi" to="." method="_on_dialogo_ui_cambio_de_personaje"]

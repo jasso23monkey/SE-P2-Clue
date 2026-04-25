@@ -1,0 +1,82 @@
+{
+  "prologo_amado": [
+	{
+	  "id": 1,
+	  "nombre": "Don Amado",
+	  "texto": "Comisario, es un gusto que haya venido a mi celebración. Tanto tiempo de conocernos y no conocía mi humilde morada.",
+	  "expresion": "2"
+	},
+	{
+	  "id": 2,
+	  "nombre": "Don Amado",
+	  "texto": "¿Recuerda aquella noche que nos conocimos en aquella cantina?, que buenos tiempos aquellos",
+	  "expresion": "2"
+	},
+	{
+	  "id": 3,
+	  "nombre": "Don Amado",
+	  "texto": "Le cuento que me siento algo inseguro esta noche, tengo la corazonada de que algo está muy mal...",
+	  "expresion": "1"
+	},
+	{
+	  "id": 4,
+	  "nombre": "Don Amado",
+	  "texto": "Por allá está {sospechoso}, debería saludarlo. Yo seguiré recibiendo a mis invitados.",
+	  "expresion": "1"
+	}
+  ],
+"bienvenida_prologo": {
+	"casilda": {
+	  "nombre": "CASILDA",
+	  "texto": "Comisario, espero que no haya venido a auditar nuestras cuentas. Mi padre tiene la mala costumbre de invitar a la ley a sus fiestas.",
+	  "expresion": "1"
+	},
+	"calixto": {
+	  "nombre": "CALIXTO",
+	  "texto": "Hijo mío, disfrute del vino, pues el espíritu de esta casa se siente pesado esta noche. Rece conmigo por la paz de los presentes.",
+	  "expresion": "1"
+	},
+	"eulalio": {
+	  "nombre": "EULALIO",
+	  "texto": "Ah, el oficial. No toque nada de la caldera, es tecnología alemana muy delicada para manos... civiles.",
+	  "expresion": "1"
+	},
+	"basilio": {
+	  "nombre": "BASILIO",
+	  "texto": "¿Qué hubo, jefe? No se fije en mis botas sucias, alguien tiene que hacer el trabajo real mientras los de arriba celebran.",
+	  "expresion": "1"
+	},
+	"juan": {
+	  "nombre": "JUAN",
+	  "texto": "Señor Comisario... mire esa fuente. Tanta agua y tanta luz no pueden ocultar el olor a tierra mojada que se avecina.",
+	  "expresion": "1"
+	}
+},
+  "presentacion": {
+	"casilda": {
+	  "nombre": "Casilda",
+	  "texto": "Comisario, qué inoportuna su llegada... o qué necesaria. Mi padre siempre decía que el orden es la base de la fortuna. Ahora que él no está, me encargaré personalmente de que ese orden se mantenga. No espere lágrimas de mi parte; en esta familia, el luto es un lujo que interfiere con los negocios.",
+	  "expresion": "1"
+	},
+	"calixto": {
+	  "nombre": "Calixto",
+	  "texto": "La paz sea con usted, hijo. O lo que quede de ella en este lugar maldito. Don Amado creía que sus máquinas de vapor lo hacían eterno, pero el hierro se oxida y la carne se pudre. Dios ha reclamado lo que es suyo, y yo estoy aquí para asegurar que las sombras no se traguen lo poco que queda de fe.",
+	  "expresion": "1"
+	},
+	"eulalio": {
+	  "nombre": "Eulalio",
+	  "texto": "¿El Comisario? Mire esta caldera... una joya de ingeniería desperdiciada por la terquedad de un viejo que no sabía cuándo retirarse. La muerte es solo una falla mecánica más, una interrupción en la producción. Si me disculpa, tengo un imperio que mantener en marcha, con o sin dueño.",
+	  "expresion": "1"
+	},
+	"basilio": {
+	  "nombre": "Basilio",
+	  "texto": "Vaya, parece que la ley por fin pisa la tierra de los libres. Don Amado se fue como vivió: haciendo ruido y dejando un desmadre. A mí no me mire con lástima, yo soy el que se parte el lomo aquí mientras los 'herederos' se pelean por las migajas. Si busca culpables, mire a los que tienen las manos limpias.",
+	  "expresion": "1"
+	},
+	"juan": {
+	  "nombre": "Juan",
+	  "texto": "Buenas noches tenga, señor oficial. El patrón ya no grita, ¿verdad? Se siente un silencio... sabroso. Dicen que la fuente se apagó, pero yo digo que finalmente descansó de tanta mentira. No me tema, yo solo soy un pobre jimador que sabe que, al final del día, todos terminamos bajo la misma tierra.",
+	  "expresion": "1"
+	}
+  }
+}

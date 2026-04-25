@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bywixutctrdw7"]
+
+[ext_resource type="Texture2D" uid="uid://oe8qcyrou7rr" path="res://assets/sprites/backgrounds/hacienda.jpeg" id="1_i3824"]
+[ext_resource type="Script" uid="uid://bo5w5e6gcpw8h" path="res://scripts/inicio.gd" id="1_q3pj3"]
+[ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="2_4vxdk"]
+
+[node name="Inicio" type="Node2D" unique_id=308784636]
+script = ExtResource("1_q3pj3")
+
+[node name="Hacienda" type="Sprite2D" parent="." unique_id=44531484]
+texture_filter = 1
+position = Vector2(583.7082, 326.75)
+scale = Vector2(0.8496091, 0.8496094)
+texture = ExtResource("1_i3824")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1992651436]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2132229275]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Titulo" type="Label" parent="CanvasLayer/Control" unique_id=1244254807]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -337.0
+offset_top = -179.0
+offset_right = 337.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_4vxdk")
+theme_type_variation = &"LabelTitulo"
+text = "La Hacienda"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Control" unique_id=1573980154]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -21.0
+offset_right = 53.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_4vxdk")
+text = "INICIAR"
+
+[connection signal="pressed" from="CanvasLayer/Control/Button" to="." method="_on_button_pressed"]

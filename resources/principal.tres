@@ -1,0 +1,79 @@
+[gd_resource type="Theme" format=3 uid="uid://6kio6pugauac"]
+
+[ext_resource type="FontFile" uid="uid://yc6d7ah0j1v3" path="res://assets/fonts/Cinzel-Bold.ttf" id="1_cd5ti"]
+[ext_resource type="FontFile" uid="uid://cbtwbdlc6btwd" path="res://assets/fonts/EBGaramond-VariableFont_wght.ttf" id="1_v85am"]
+[ext_resource type="FontFile" uid="uid://dr5asium54ya5" path="res://assets/fonts/Cinzel-VariableFont_wght.ttf" id="3_nbm83"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cd5ti"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.75)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v85am"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v85am"]
+bg_color = Color(0.6, 0.2, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbm83"]
+bg_color = Color(0.49019608, 0.41568628, 0.05882353, 0.30588236)
+border_width_top = 2
+border_color = Color(0.6509804, 0.50980395, 0.05882353, 0.74509805)
+
+[resource]
+Boton1/base_type = &"FlatButton"
+Boton1/font_sizes/font_size = 40
+Boton1/fonts/font = ExtResource("1_v85am")
+Button/constants/outline_size = 5
+Button/font_sizes/font_size = 45
+Button/fonts/font = ExtResource("1_v85am")
+Button/icons/icon = null
+Button/styles/normal = null
+HeaderMedium/font_sizes/font_size = 35
+HeaderMedium/fonts/font = ExtResource("1_cd5ti")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 16
+Label/fonts/font = ExtResource("1_cd5ti")
+Label/styles/focus = SubResource("StyleBoxFlat_cd5ti")
+Label/styles/normal = SubResource("StyleBoxEmpty_v85am")
+LabelTitulo/base_type = &"Label"
+LabelTitulo/colors/font_outline_color = Color(0.44705883, 0.4, 0.09803922, 0.2784314)
+LabelTitulo/constants/outline_size = 15
+LabelTitulo/constants/shadow_outline_size = 0
+LabelTitulo/font_sizes/font_size = 125
+LabelTitulo/fonts/font = ExtResource("1_cd5ti")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_v85am")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/normal_font_size = 40
+RichTextLabel/fonts/bold_font = ExtResource("1_cd5ti")
+RichTextLabel/fonts/normal_font = ExtResource("3_nbm83")
+dialogos/base_type = &"RichTextLabel"
+dialogos/colors/default_color = Color(1, 1, 1, 1)
+dialogos/colors/font_outline_color = Color(1, 1, 1, 1)
+dialogos/constants/outline_size = 1
+dialogos/fonts/normal_font = ExtResource("1_v85am")
+panel_dialogo/base_type = &"PanelContainer"
+panel_dialogo/styles/panel = SubResource("StyleBoxFlat_nbm83")

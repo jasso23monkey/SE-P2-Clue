@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://g7vkb1tpf5kr"]
+
+[ext_resource type="Texture2D" uid="uid://dxt5eylnq2mj3" path="res://assets/sprites/backgrounds/paper.png" id="1_5o4vn"]
+[ext_resource type="Script" uid="uid://dc8poj4axbcrw" path="res://scripts/historia.gd" id="1_w5wgw"]
+[ext_resource type="Texture2D" uid="uid://oe8qcyrou7rr" path="res://assets/sprites/backgrounds/hacienda.jpeg" id="2_4605v"]
+[ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="2_u5a4g"]
+[ext_resource type="Shader" uid="uid://cxbqpxuua3vs7" path="res://resources/radial.gdshader" id="3_1jdvv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w5wgw"]
+shader = ExtResource("3_1jdvv")
+shader_parameter/feather = 0.1
+shader_parameter/opacity = 0.8
+
+[node name="Historia" type="Node2D" unique_id=834763506]
+script = ExtResource("1_w5wgw")
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=772635130]
+position = Vector2(586, 358)
+texture = ExtResource("1_5o4vn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=836035757]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1781123440]
+custom_minimum_size = Vector2(20, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -555.5
+offset_top = -321.0
+offset_right = 555.5
+offset_bottom = 321.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_u5a4g")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer" unique_id=1778296130]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer" unique_id=2038675526]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=390253360]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer" unique_id=1602563409]
+material = SubResource("ShaderMaterial_w5wgw")
+layout_mode = 2
+texture = ExtResource("2_4605v")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Control" type="Control" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=546497229]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=461925640]
+unique_name_in_owner = true
+clip_contents = false
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+theme = ExtResource("2_u5a4g")
+text = "En el corazón de San Josecito del Cobre, la imponente hacienda 'La Esperanza' se viste de gala."
+horizontal_alignment = 1
+vertical_alignment = 1

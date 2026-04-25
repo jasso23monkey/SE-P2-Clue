@@ -1,0 +1,131 @@
+{
+  "pistas_armas": {
+	"pista_daga_plata": {
+	  "nombre": "Daga de Plata",
+	  "propietario": "casilda",
+	  "tipo": "arma",
+	  "efecto": "herida punzante",
+	  "descripcion": "Una daga fina con empuñadura de plata decorada."
+	},
+	"pista_crucifijo_bronce": {
+	  "nombre": "Crucifijo de Bronce",
+	  "propietario": "calixto",
+	  "tipo": "arma",
+	  "efecto": "traumatismo craneal",
+	  "descripcion": "Un crucifijo pesado que muestra marcas de impacto."
+	},
+	"pista_pistola_vapor": {
+	  "nombre": "Pistola de Vapor",
+	  "propietario": "eulalio",
+	  "tipo": "arma",
+	  "efecto": "quemadura por presión",
+	  "descripcion": "Una herramienta neumática experimental de alta presión."
+	},
+	"pista_soga_ixtle": {
+	  "nombre": "Soga de Ixtle",
+	  "propietario": "basilio",
+	  "tipo": "arma",
+	  "efecto": "asfixia",
+	  "descripcion": "Cuerda gruesa de fibra natural, muy resistente."
+	},
+	"pista_coa_jima": {
+	  "nombre": "Coa de Jima",
+	  "propietario": "juan",
+	  "tipo": "arma",
+	  "efecto": "corte profundo",
+	  "descripcion": "Herramienta afilada usada para cortar las hojas del agave."
+	}
+  },
+  "pistas_personales": {
+	"pista_velo": {
+	  "nombre": "Velo de Encaje",
+	  "propietario": "casilda",
+	  "ubicacion_original": "zaguan",
+	  "descripcion": "Un velo delicado que desprende un ligero aroma a perfume caro."
+	},
+	"pista_abanico": {
+	  "nombre": "Abanico Pintado",
+	  "propietario": "casilda",
+	  "ubicacion_original": "capilla",
+	  "descripcion": "Un abanico de madera con escenas pintadas a mano."
+	},
+	"pista_anillo": {
+	  "nombre": "Anillo de Oro",
+	  "propietario": "casilda",
+	  "ubicacion_original": "alambiques",
+	  "descripcion": "Una sortija con una piedra preciosa pequeña."
+	},
+	"pista_biblia": {
+	  "nombre": "Biblia de Bolsillo",
+	  "propietario": "calixto",
+	  "ubicacion_original": "zaguan",
+	  "descripcion": "Un ejemplar desgastado con pasajes marcados."
+	},
+	"pista_rosario": {
+	  "nombre": "Rosario de Madera",
+	  "propietario": "calixto",
+	  "ubicacion_original": "despacho",
+	  "descripcion": "Cuentas de madera unidas por un cordel sencillo."
+	},
+	"pista_cirio": {
+	  "nombre": "Cirio Pascual",
+	  "propietario": "calixto",
+	  "ubicacion_original": "caballerizas",
+	  "descripcion": "Una vela gruesa de cera de abeja, parcialmente consumida."
+	},
+	"pista_engrane": {
+	  "nombre": "Engrane Dentado",
+	  "propietario": "eulalio",
+	  "ubicacion_original": "despacho",
+	  "descripcion": "Una pieza mecánica de precisión cubierta de aceite."
+	},
+	"pista_llave_inglesa": {
+	  "nombre": "Llave Inglesa",
+	  "propietario": "eulalio",
+	  "ubicacion_original": "capilla",
+	  "descripcion": "Herramienta de hierro pesado, esencial para el mantenimiento."
+	},
+	"pista_planos": {
+	  "nombre": "Planos Técnicos",
+	  "propietario": "eulalio",
+	  "ubicacion_original": "caballerizas",
+	  "descripcion": "Diagramas detallados del sistema de vapor de la hacienda."
+	},
+	"pista_latigo": {
+	  "nombre": "Látigo de Cuero",
+	  "propietario": "basilio",
+	  "ubicacion_original": "capilla",
+	  "descripcion": "Un látigo largo usado por el capataz para guiar al ganado."
+	},
+	"pista_espuelas": {
+	  "nombre": "Espuelas de Plata",
+	  "propietario": "basilio",
+	  "ubicacion_original": "alambiques",
+	  "descripcion": "Piezas metálicas que tintinean al menor movimiento."
+	},
+	"pista_sello_ganado": {
+	  "nombre": "Sello de Hierro",
+	  "propietario": "basilio",
+	  "ubicacion_original": "caballerizas",
+	  "descripcion": "Hierro para marcar el ganado con el emblema de la hacienda."
+	},
+	"pista_sombrero": {
+	  "nombre": "Sombrero de Paja",
+	  "propietario": "juan",
+	  "ubicacion_original": "zaguan",
+	  "descripcion": "Protección sencilla contra el sol, algo maltratada por el uso."
+	},
+	"pista_bule_agua": {
+	  "nombre": "Bule para Agua",
+	  "propietario": "juan",
+	  "ubicacion_original": "despacho",
+	  "descripcion": "Un recipiente natural para transportar agua fresca."
+	},
+	"pista_paliacate": {
+	  "nombre": "Paliacate Rojo",
+	  "propietario": "juan",
+	  "ubicacion_original": "alambiques",
+	  "descripcion": "Pañuelo de tela usado para limpiarse el sudor del campo."
+	}
+  }
+}

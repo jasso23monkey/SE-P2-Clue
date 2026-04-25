@@ -1,0 +1,49 @@
+{
+  "prologo": {
+	"titulo": "La Luz de la Esperanza",
+	"partes": [
+		"En el corazón de San Josecito del Cobre, la imponente hacienda 'La Esperanza' se viste de gala.",
+		"Hoy es un día histórico: se celebra el cumpleaños 65 de Don Amado Castañeda II, el hombre que mecanizó la industria del tequila.",
+		"Los invitados aguardan con aliento contenido, pues corre el rumor de que durante la cena se anunciará al sucesor, su hijo Amado III.",
+		"Existe una leyenda en el pueblo: la fuente principal de la hacienda está conectada a la vida de Don Amado.",
+		"Dicen que el día que su luz se apague sin un digno sucesor, el pueblo caerá en la miseria.",
+		"Mientras los invitados llegan, la hacienda se llena de bullicio... hasta que un estruendo metálico lo cambia todo.",
+		"Una caldera ha explotado. El vapor espeso inunda el lugar y la luz de la fuente comienza a morir.",
+		"Don Amado ha muerto. Las puertas de seguridad se cierran automáticamente.",
+		"Tienes poco tiempo para descubrir quién apagó la luz de la esperanza antes de que el asesino se pierda entre las sombras."
+	]
+  },
+  "lugares": {
+	"despacho": "Un búnker de caoba y metal. Aquí se gestaron los contratos que levantaron este imperio y las traiciones que lo derrumbaron.",
+	"capilla": "Un recinto donde el oro de los altares brilla con la misma frialdad que la sangre derramada. Los santos parecen juzgar en silencio.",
+	"alambiques": "Una selva de tuberías y vapor. El rugido de las máquinas oculta los gritos de los vivos y los lamentos de los muertos.",
+	"zaguan": "El umbral entre la gloria de los Castañeda y la miseria del pueblo. Un lugar de tránsito donde nadie está seguro.",
+	"caballerizas": "Donde la elegancia de la hacienda se mezcla con el barro y el sudor. Aquí la fuerza bruta es la única ley que se respeta."
+  },
+  "finales": {
+	"casilda": {
+	  "titulo": "Derecho de Sangre",
+	  "texto": "Casilda no baja la mirada. 'Era lo justo', susurra con una sonrisa gélida mientras le ponen las esposas. Para ella, matar a su padre no fue un pecado, sino un trámite administrativo para reclamar el trono que la ley de los hombres le negaba por ser mujer. Se marcha con la frente en alto, como una reina que solo perdió una batalla."
+	},
+	"calixto": {
+	  "titulo": "Justicia Divina",
+	  "texto": "El Padre Calixto sostiene su rosario con fuerza. 'La Luz de la Esperanza era una blasfemia de cristal y vapor', sentencia. No busca clemencia, pues cree que su acto limpió la hacienda de la avaricia de Don Amado. Para él, la justicia del hombre es nada comparada con el juicio que, según él, ya lo esperaba allá arriba."
+	},
+	"eulalio": {
+	  "titulo": "Actualización de Sistema",
+	  "texto": "Eulalio observa sus manos manchadas de aceite. Para el ingeniero, Don Amado era simplemente un equipo obsoleto que estorbaba en la línea de producción. 'La maquinaria debía actualizarse', explica con una frialdad técnica que aterra. Sin el patrón limitando su ingenio, cree que la hacienda finalmente alcanzará su máximo potencial, incluso si él termina tras las rejas."
+	},
+	"basilio": {
+	  "titulo": "El Verdadero Heredero",
+	  "texto": "Basilio escupe al suelo con desprecio. Grita a los cuatro vientos que él es el verdadero Amado III, el primogénito que trabajó la tierra mientras los otros disfrutaban del lujo. 'Si no me daban lo que es mío, me tocaba tomarlo con mis propias manos'. No se siente un criminal, sino un hombre que reclamó su herencia con el sudor y la sangre que le pertenecen."
+	},
+	"juan": {
+	  "titulo": "El Cobrador de Almas",
+	  "texto": "Juan, o la entidad que habita su cuerpo, suelta una carcajada que hace vibrar las tuberías de la hacienda. 'Don Amado tuvo 65 años de gloria a cambio de una sola noche de dolor. Es un trato justo', dice mientras sus ojos se tornan del color de las brasas. La luz de la fuente nunca volverá a encenderse; el pacto ha terminado y San Josecito del Cobre ahora le pertenece a la oscuridad."
+	},
+	"derrota": {
+	  "titulo": "Sombras Permanentes",
+	  "texto": "Ha acusado a la persona equivocada. El verdadero asesino sonríe desde las sombras mientras observas cómo se llevan a un inocente. La fuente permanece apagada y el vapor nunca termina de disiparse. Ha fallado, Comisario, y la miseria prometida por la leyenda comienza a reclamar la hacienda."
+	}
+  }
+}
