@@ -1,11 +1,10 @@
 extends Control
 
+# Definimos la señal (como un canal de comunicación)
+signal cambio_de_personaje(nombre_archivo)
 # Referencias a los nodos hijos
 @onready var label_nombre = %Label
 @onready var label_texto = %RichTextLabel
-
-# Definimos la señal (como un canal de comunicación)
-signal cambio_de_personaje(nombre_archivo)
 
 # Lista de sospechosos para el momento aleatorio
 var sospechosos = ["casilda", "calixto", "eulalio", "basilio", "juan"]
@@ -33,11 +32,24 @@ func avanzar_logica():
 			Global.indice_prologo_actual += 1
 			mostrar_paso_prologo()
 		else:
-			# Si ya terminó lo de Don Amado, pasamos a la presentación
+			# Terminó Don Amado, vamos al sospechoso aleatorio
 			iniciar_presentacion_sospechoso()
 	else:
-		# Aquí podrías decidir qué pasa después de que el sospechoso habla
-		print("Fin de la presentación, inicia la investigación.")
+		# SI ESTAMOS AQUÍ, es porque el sospechoso ya habló.
+		# Al dar click ahora, DEBEMOS REGRESAR.
+		regresar_a_historia_fase_2()
+
+func regresar_a_historia_fase_2():
+	# 1. IMPORTANTE: Cambiamos el estado global
+	Global.fase_prologo = "prologo_2"
+	Global.indice_historia = 0 # Para que la historia empiece desde el texto 0 de la fase 2
+	
+	# 2. Limpieza de flags
+	viendo_presentacion = false
+	Global.prologo_activo = false
+	
+	print("Handshake completo: Cambiando a Prologo 2")
+	get_tree().change_scene_to_file("res://scenes/historia.tscn")
 
 func mostrar_paso_prologo():
 	var paso = datos_dialogo["prologo_amado"][Global.indice_prologo_actual]
@@ -81,4 +93,3 @@ func actualizar_interfaz(nombre, texto):
 	label_texto.visible_ratio = 0
 	var tween = create_tween()
 	tween.tween_property(label_texto, "visible_ratio", 1.0, 1.0)
-	

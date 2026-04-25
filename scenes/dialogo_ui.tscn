@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cb5dw4k3u8acc"]
 
 [ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="1_3r1ne"]
-[ext_resource type="Script" uid="uid://cl77ff4a0tk1t" path="res://scripts/dialogo_ui.gd" id="1_jdcej"]
+[ext_resource type="Script" uid="uid://cwfq67d5hesg5" path="res://scripts/dialogo_ui.gd" id="1_jdcej"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3r1ne"]
 bg_color = Color(0.6509804, 0.50980395, 0.05882353, 0.74509805)
@@ -35,7 +35,7 @@ layout_mode = 2
 theme = ExtResource("1_3r1ne")
 theme_type_variation = &"dialogos"
 bbcode_enabled = true
-text = "Pruebita [shake]xd dí[/shake]
+text = "Pruebita [shake]xd dí[/wave]
 "
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -3,13 +3,8 @@ extends Node2D
 @onready var texture_rect = %TextureRect
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+	#%DialogoUi.cambio_de_personaje.connect(_on_dialogo_ui_cambio_de_personaje)
 	pass
-
 
 func _on_dialogo_ui_cambio_de_personaje(nombre_archivo):
 	var ruta_final = "res://assets/sprites/characters/" + nombre_archivo + ".png"

@@ -1,0 +1,24 @@
+{
+  "estados": {
+	"prologo_1": {
+	  "escena": "res://scenes/historia.tscn",
+	  "siguiente_estado": "dialogo_inicial",
+	  "descripcion": "Introducción narrativa inicial"
+	},
+	"dialogo_inicial": {
+	  "escena": "res://scenes/dialogo.tscn",
+	  "siguiente_estado": "prologo_2",
+	  "descripcion": "Encuentro con Don Amado y el invitado"
+	},
+	"prologo_2": {
+	  "escena": "res://scenes/historia.tscn",
+	  "siguiente_estado": "mapa_investigacion",
+	  "descripcion": "La tragedia y cierre del prólogo"
+	},
+	"hub": {
+	  "escena": "res://scenes/hub.tscn",
+	  "siguiente_estado": "final_acusacion",
+	  "descripcion": "Bucle principal de gameplay"
+	}
+  }
+}

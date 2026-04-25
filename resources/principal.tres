@@ -3,6 +3,7 @@
 [ext_resource type="FontFile" uid="uid://yc6d7ah0j1v3" path="res://assets/fonts/Cinzel-Bold.ttf" id="1_cd5ti"]
 [ext_resource type="FontFile" uid="uid://cbtwbdlc6btwd" path="res://assets/fonts/EBGaramond-VariableFont_wght.ttf" id="1_v85am"]
 [ext_resource type="FontFile" uid="uid://dr5asium54ya5" path="res://assets/fonts/Cinzel-VariableFont_wght.ttf" id="3_nbm83"]
+[ext_resource type="FontFile" uid="uid://cagdvcklrnb3s" path="res://assets/fonts/SpecialElite-Regular.ttf" id="4_yobor"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cd5ti"]
 content_margin_left = 4.0
@@ -29,6 +30,9 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v85am"]
 bg_color = Color(0.6, 0.2, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xuwq"]
+bg_color = Color(0.6, 0.6, 0.6, 0.011764706)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbm83"]
 bg_color = Color(0.49019608, 0.41568628, 0.05882353, 0.30588236)
@@ -70,10 +74,24 @@ RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
 RichTextLabel/font_sizes/normal_font_size = 40
 RichTextLabel/fonts/bold_font = ExtResource("1_cd5ti")
 RichTextLabel/fonts/normal_font = ExtResource("3_nbm83")
+close/base_type = &"Button"
+close/colors/font_color = Color(1.0039686, 1.0039686, 1.0039686, 1)
+close/constants/outline_size = 5
+close/font_sizes/font_size = 25
+close/fonts/font = ExtResource("4_yobor")
+close/styles/normal = SubResource("StyleBoxFlat_4xuwq")
 dialogos/base_type = &"RichTextLabel"
 dialogos/colors/default_color = Color(1, 1, 1, 1)
 dialogos/colors/font_outline_color = Color(1, 1, 1, 1)
 dialogos/constants/outline_size = 1
 dialogos/fonts/normal_font = ExtResource("1_v85am")
+libro_texto/base_type = &"Label"
+libro_texto/colors/font_color = Color(0, 0, 0, 1)
+libro_texto/font_sizes/font_size = 30
+libro_texto/fonts/font = ExtResource("4_yobor")
+libro_titulo/base_type = &"Label"
+libro_titulo/colors/font_color = Color(0, 0, 0, 1)
+libro_titulo/font_sizes/font_size = 45
+libro_titulo/fonts/font = ExtResource("4_yobor")
 panel_dialogo/base_type = &"PanelContainer"
 panel_dialogo/styles/panel = SubResource("StyleBoxFlat_nbm83")

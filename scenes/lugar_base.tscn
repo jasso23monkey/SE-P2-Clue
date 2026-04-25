@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://live42f7f8ef"]
+
+[ext_resource type="Script" uid="uid://olgm3ffduilh" path="res://scripts/lugar_base.gd" id="1_ytx3s"]
+[ext_resource type="Theme" uid="uid://6kio6pugauac" path="res://resources/principal.tres" id="2_i84mh"]
+[ext_resource type="Texture2D" uid="uid://dkrokoc86g1mw" path="res://assets/sprites/backgrounds/despacho.jpeg" id="2_qm13y"]
+[ext_resource type="Texture2D" uid="uid://cy2jhuxyxdtbu" path="res://assets/sprites/items/lupa.png" id="2_ytx3s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i84mh"]
+radius = 16.763054
+
+[node name="LugarBase" type="Node2D" unique_id=1096164667]
+script = ExtResource("1_ytx3s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=161226379]
+
+[node name="Fondo" type="TextureRect" parent="CanvasLayer" unique_id=1202044996]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qm13y")
+expand_mode = 1
+
+[node name="Opciones" type="PanelContainer" parent="CanvasLayer" unique_id=515043278]
+unique_name_in_owner = true
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -90.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_i84mh")
+theme_type_variation = &"panel_dialogo"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Opciones" unique_id=402993406]
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Opciones/MarginContainer" unique_id=1383707435]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Opciones/MarginContainer/HBoxContainer" unique_id=915616969]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_i84mh")
+theme_type_variation = &"HeaderMedium"
+text = "pistas: 0/4"
+
+[node name="Regresar" type="Button" parent="CanvasLayer" unique_id=279821408]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_bottom = 68.0
+grow_horizontal = 0
+theme = ExtResource("2_i84mh")
+text = "REGRESAR"
+
+[node name="Pista_1" type="Area2D" parent="CanvasLayer" unique_id=1997715451]
+unique_name_in_owner = true
+position = Vector2(282, 412)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Pista_1" unique_id=1802340421]
+position = Vector2(-88, 15)
+scale = Vector2(0.067999996, 0.067999996)
+texture = ExtResource("2_ytx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Pista_1" unique_id=1267234575]
+position = Vector2(-87, 16)
+shape = SubResource("CircleShape2D_i84mh")
+debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
+
+[node name="Pista_2" type="Area2D" parent="CanvasLayer" unique_id=823256414]
+unique_name_in_owner = true
+position = Vector2(635, 503)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Pista_2" unique_id=1213014246]
+position = Vector2(-88, 15)
+scale = Vector2(0.067999996, 0.067999996)
+texture = ExtResource("2_ytx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Pista_2" unique_id=671227295]
+position = Vector2(-87, 16)
+shape = SubResource("CircleShape2D_i84mh")
+debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
+
+[node name="Pista_3" type="Area2D" parent="CanvasLayer" unique_id=2050702366]
+unique_name_in_owner = true
+position = Vector2(925, 308)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Pista_3" unique_id=186041002]
+position = Vector2(-88, 15)
+scale = Vector2(0.067999996, 0.067999996)
+texture = ExtResource("2_ytx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Pista_3" unique_id=2101697947]
+position = Vector2(-87, 16)
+shape = SubResource("CircleShape2D_i84mh")
+debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
+
+[node name="Pista_4" type="Area2D" parent="CanvasLayer" unique_id=603552251]
+unique_name_in_owner = true
+position = Vector2(1211, 516)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Pista_4" unique_id=1311339739]
+position = Vector2(-88, 15)
+scale = Vector2(0.067999996, 0.067999996)
+texture = ExtResource("2_ytx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Pista_4" unique_id=246267845]
+position = Vector2(-87, 16)
+shape = SubResource("CircleShape2D_i84mh")
+debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
+
+[connection signal="pressed" from="CanvasLayer/Regresar" to="." method="_on_regresar_pressed"]

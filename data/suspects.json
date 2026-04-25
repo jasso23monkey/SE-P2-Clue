@@ -1,37 +1,32 @@
 {
   "casilda": {
-	"nombre_completo": "Casilda Castañeda",
-	"ocupacion": "Primogénita de la familia Castañeda",
-	"descripcion_inicial": "La hija mayor de Don Amado. Siempre mantiene una postura impecable, aunque su mirada refleja una profunda frialdad.",
-	"motivo_oculto": "Resentimiento por la herencia. Al no ser hombre, la fortuna pasará a su hermano menor, dejándola a ella en un segundo plano a pesar de ser la primogénita.",
-	"desbloqueado": false
+	"nombre": "Casilda Castañeda",
+	"descripcion": "Primogénita de la familia. Resentimiento por la herencia: al no ser hombre, la fortuna pasará a su hermano menor.",
+	"imagen": "res://assets/sprites/characters/casilda_1.png",
+	"ocupacion": "Primogénita"
   },
   "calixto": {
-	"nombre_completo": "Padre Calixto de la Cruz",
-	"ocupacion": "Sacerdote del pueblo",
-	"descripcion_inicial": "El guía espiritual de la hacienda. Parece preocupado por el bienestar de las almas, o quizás por el de su parroquia.",
-	"motivo_oculto": "Conflicto económico religioso. Don Amado retiró el apoyo a la iglesia y asfixió el diezmo de los trabajadores, debilitando el poder del clérigo.",
-	"desbloqueado": false
+	"nombre": "Padre Calixto",
+	"descripcion": "Guía espiritual. Don Amado retiró el apoyo a la iglesia, debilitando el poder del clérigo en la región.",
+	"imagen": "res://assets/sprites/characters/calixto_1.png",
+	"ocupacion": "Sacerdote"
   },
   "eulalio": {
-	"nombre_completo": "Ing. Eulalio Salazar",
-	"ocupacion": "Ingeniero Industrial",
-	"descripcion_inicial": "Un hombre de ciencia que transformó la destilería en una joya tecnológica. Sus manos siempre tienen rastro de grasa o aceite.",
-	"motivo_oculto": "Falta de reconocimiento profesional. Fue el cerebro detrás del éxito de la hacienda, pero Don Amado lo trataba como a un simple empleado más.",
-	"desbloqueado": false
+	"nombre": "Ing. Eulalio Salazar",
+	"descripcion": "Cerebro tecnológico de la hacienda. Siente falta de reconocimiento; Don Amado lo trata como a un simple empleado.",
+	"imagen": "res://assets/sprites/characters/eulalio_1.png",
+	"ocupacion": "Ingeniero"
   },
   "basilio": {
-	"nombre_completo": "Basilio Mendieta",
-	"ocupacion": "Capataz de la Hacienda",
-	"descripcion_inicial": "La mano derecha de Don Amado. Es rudo, eficiente y conoce cada rincón de las tierras mejor que nadie.",
-	"motivo_oculto": "Hijo ilegítimo. Si se confirmaran los rumores, él sería el verdadero heredero al ser el mayor de todos los hijos, superando incluso a Casilda.",
-	"desbloqueado": false
+	"nombre": "Basilio Mendieta",
+	"descripcion": "Capataz rudo. Se rumorea que es hijo ilegítimo de Don Amado, lo que lo haría el verdadero heredero.",
+	"imagen": "res://assets/sprites/characters/basilio_1.png",
+	"ocupacion": "Capataz"
   },
   "juan": {
-	"nombre_completo": "Juan 'Abominable'",
-	"ocupacion": "Jimador",
-	"descripcion_inicial": "Un trabajador silencioso y escuálido. Su aspecto es descuidado, lo que le ha valido burlas constantes por parte del patrón.",
-	"motivo_oculto": "Venganza por humillación. Don Amado lo rebautizó con un apodo cruel y lo humillaba por su apariencia, sembrando un odio silencioso en el campo.",
-	"desbloqueado": false
+	"nombre": "Juan 'Abominable'",
+	"descripcion": "Jimador humillado. Odio acumulado por las burlas constantes del patrón sobre su aspecto físico.",
+	"imagen": "res://assets/sprites/characters/juan_1.png",
+	"ocupacion": "Jimador"
   }
 }

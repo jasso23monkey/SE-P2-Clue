@@ -5,6 +5,7 @@
 	  "propietario": "casilda",
 	  "tipo": "arma",
 	  "efecto": "herida punzante",
+	  "ubicacion_original": "despacho",
 	  "descripcion": "Una daga fina con empuñadura de plata decorada."
 	},
 	"pista_crucifijo_bronce": {
@@ -12,6 +13,7 @@
 	  "propietario": "calixto",
 	  "tipo": "arma",
 	  "efecto": "traumatismo craneal",
+	  "ubicacion_original": "capilla",
 	  "descripcion": "Un crucifijo pesado que muestra marcas de impacto."
 	},
 	"pista_pistola_vapor": {
@@ -19,6 +21,7 @@
 	  "propietario": "eulalio",
 	  "tipo": "arma",
 	  "efecto": "quemadura por presión",
+	  "ubicacion_original": "alambiques",
 	  "descripcion": "Una herramienta neumática experimental de alta presión."
 	},
 	"pista_soga_ixtle": {
@@ -26,6 +29,7 @@
 	  "propietario": "basilio",
 	  "tipo": "arma",
 	  "efecto": "asfixia",
+	  "ubicacion_original": "zaguan",
 	  "descripcion": "Cuerda gruesa de fibra natural, muy resistente."
 	},
 	"pista_coa_jima": {
@@ -33,6 +37,7 @@
 	  "propietario": "juan",
 	  "tipo": "arma",
 	  "efecto": "corte profundo",
+	  "ubicacion_original": "caballerizas",
 	  "descripcion": "Herramienta afilada usada para cortar las hojas del agave."
 	}
   },

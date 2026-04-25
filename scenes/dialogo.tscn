@@ -18,7 +18,6 @@ scale = Vector2(1.2096355, 1.2148439)
 texture = ExtResource("1_qv0hs")
 
 [node name="Patio" type="Sprite2D" parent="." unique_id=1352707719]
-visible = false
 texture_filter = 1
 texture_repeat = 1
 position = Vector2(848.15967, 289.00003)
@@ -49,5 +48,6 @@ expand_mode = 3
 stretch_mode = 5
 
 [node name="DialogoUi" parent="CanvasLayer" unique_id=757542869 instance=ExtResource("5_dc3ot")]
+unique_name_in_owner = true
 
 [connection signal="cambio_de_personaje" from="CanvasLayer/DialogoUi" to="." method="_on_dialogo_ui_cambio_de_personaje"]

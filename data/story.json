@@ -1,5 +1,5 @@
 {
-  "prologo": {
+  "prologo_1": {
 	"titulo": "La Luz de la Esperanza",
 	"partes": [
 		"En el corazón de San Josecito del Cobre, la imponente hacienda 'La Esperanza' se viste de gala.",
@@ -7,19 +7,44 @@
 		"Los invitados aguardan con aliento contenido, pues corre el rumor de que durante la cena se anunciará al sucesor, su hijo Amado III.",
 		"Existe una leyenda en el pueblo: la fuente principal de la hacienda está conectada a la vida de Don Amado.",
 		"Dicen que el día que su luz se apague sin un digno sucesor, el pueblo caerá en la miseria.",
+	]
+ },
+"prologo_2": {
+	"titulo": "La Luz de la Esperanza",
+	"partes": [
 		"Mientras los invitados llegan, la hacienda se llena de bullicio... hasta que un estruendo metálico lo cambia todo.",
 		"Una caldera ha explotado. El vapor espeso inunda el lugar y la luz de la fuente comienza a morir.",
 		"Don Amado ha muerto. Las puertas de seguridad se cierran automáticamente.",
 		"Tienes poco tiempo para descubrir quién apagó la luz de la esperanza antes de que el asesino se pierda entre las sombras."
 	]
-  },
+ },
   "lugares": {
-	"despacho": "Un búnker de caoba y metal. Aquí se gestaron los contratos que levantaron este imperio y las traiciones que lo derrumbaron.",
-	"capilla": "Un recinto donde el oro de los altares brilla con la misma frialdad que la sangre derramada. Los santos parecen juzgar en silencio.",
-	"alambiques": "Una selva de tuberías y vapor. El rugido de las máquinas oculta los gritos de los vivos y los lamentos de los muertos.",
-	"zaguan": "El umbral entre la gloria de los Castañeda y la miseria del pueblo. Un lugar de tránsito donde nadie está seguro.",
-	"caballerizas": "Donde la elegancia de la hacienda se mezcla con el barro y el sudor. Aquí la fuerza bruta es la única ley que se respeta."
-  },
+	"despacho": {
+		"nombre": "Despacho",
+		"descripcion": "Un búnker de caoba y metal. Aquí se gestaron los contratos que levantaron este imperio y las traiciones que lo derrumbaron.",
+		"imagen": "res://assets/sprites/backgrounds/despacho.jpeg"
+	},
+	"capilla": {
+		"nombre": "Capilla",
+		"descripcion": "Un recinto donde el oro de los altares brilla con la misma frialdad que la sangre derramada. Los santos parecen juzgar en silencio.",
+		"imagen": "res://assets/sprites/backgrounds/capilla.jpeg"
+	},
+	"alambiques": {
+		"nombre": "Alambiques",
+		"descripcion": "Una selva de tuberías y vapor. El rugido de las máquinas oculta los gritos de los vivos y los lamentos de los muertos.",
+		"imagen": "res://assets/sprites/backgrounds/calderas.jpeg"
+	},
+	"zaguan": {
+		"nombre": "Zaguán",
+		"descripcion": "El umbral entre la gloria de los Castañeda y la miseria del pueblo. Un lugar de tránsito donde nadie está seguro.",
+		"imagen": "res://assets/sprites/backgrounds/zaguan.jpeg"
+	},
+	"caballerizas": {
+		"nombre": "Caballerizas",
+		"descripcion": "Donde la elegancia de la hacienda se mezcla con el barro y el sudor. Aquí la fuerza bruta es la única ley que se respeta.",
+		"imagen": "res://assets/sprites/backgrounds/caballerizas.jpeg"
+	}
+},
   "finales": {
 	"casilda": {
 	  "titulo": "Derecho de Sangre",
