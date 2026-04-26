@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpgl3jjk36j73"
-path="res://.godot/imported/calderas.jpeg-a98be019224f064d878f59a70bba9a9b.ctex"
+uid="uid://dgdeauruoriwd"
+path="res://.godot/imported/alambiques.jpeg-76ce8b905b7bf3271bc207327871629a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/backgrounds/calderas.jpeg"
-dest_files=["res://.godot/imported/calderas.jpeg-a98be019224f064d878f59a70bba9a9b.ctex"]
+source_file="res://assets/sprites/backgrounds/alambiques.jpeg"
+dest_files=["res://.godot/imported/alambiques.jpeg-76ce8b905b7bf3271bc207327871629a.ctex"]
 
 [params]
 

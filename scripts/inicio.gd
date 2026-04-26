@@ -9,6 +9,12 @@ const ESCENA_HISTORIA = "res://scenes/historia.tscn"
 	
 
 func _on_button_pressed() -> void:
+	#1. Elegimos el caso aleatorio antes de que empiece cualquier escena
+	Global.generar_misterio_aleatorio()
+	
+	# 2. Reiniciamos cualquier valor de partidas anteriores si es necesario
+	Global.reiniciar_progreso()
+	
 	# Esta es la función mágica para cambiar de escena
 	var error = get_tree().change_scene_to_file(ESCENA_HISTORIA)
 	

@@ -2,7 +2,7 @@
   "pistas_armas": {
 	"pista_daga_plata": {
 	  "nombre": "Daga de Plata",
-	  "propietario": "casilda",
+	  "propietario": "Casilda",
 	  "tipo": "arma",
 	  "efecto": "herida punzante",
 	  "ubicacion_original": "despacho",
@@ -10,7 +10,7 @@
 	},
 	"pista_crucifijo_bronce": {
 	  "nombre": "Crucifijo de Bronce",
-	  "propietario": "calixto",
+	  "propietario": "Calixto",
 	  "tipo": "arma",
 	  "efecto": "traumatismo craneal",
 	  "ubicacion_original": "capilla",
@@ -18,7 +18,7 @@
 	},
 	"pista_pistola_vapor": {
 	  "nombre": "Pistola de Vapor",
-	  "propietario": "eulalio",
+	  "propietario": "Eulalio",
 	  "tipo": "arma",
 	  "efecto": "quemadura por presión",
 	  "ubicacion_original": "alambiques",
@@ -26,7 +26,7 @@
 	},
 	"pista_soga_ixtle": {
 	  "nombre": "Soga de Ixtle",
-	  "propietario": "basilio",
+	  "propietario": "Basilio",
 	  "tipo": "arma",
 	  "efecto": "asfixia",
 	  "ubicacion_original": "zaguan",
@@ -34,7 +34,7 @@
 	},
 	"pista_coa_jima": {
 	  "nombre": "Coa de Jima",
-	  "propietario": "juan",
+	  "propietario": "Juan",
 	  "tipo": "arma",
 	  "efecto": "corte profundo",
 	  "ubicacion_original": "caballerizas",
@@ -44,91 +44,91 @@
   "pistas_personales": {
 	"pista_velo": {
 	  "nombre": "Velo de Encaje",
-	  "propietario": "casilda",
+	  "propietario": "Casilda",
 	  "ubicacion_original": "zaguan",
 	  "descripcion": "Un velo delicado que desprende un ligero aroma a perfume caro."
 	},
 	"pista_abanico": {
 	  "nombre": "Abanico Pintado",
-	  "propietario": "casilda",
+	  "propietario": "Casilda",
 	  "ubicacion_original": "capilla",
 	  "descripcion": "Un abanico de madera con escenas pintadas a mano."
 	},
 	"pista_anillo": {
 	  "nombre": "Anillo de Oro",
-	  "propietario": "casilda",
+	  "propietario": "Casilda",
 	  "ubicacion_original": "alambiques",
 	  "descripcion": "Una sortija con una piedra preciosa pequeña."
 	},
 	"pista_biblia": {
 	  "nombre": "Biblia de Bolsillo",
-	  "propietario": "calixto",
+	  "propietario": "Calixto",
 	  "ubicacion_original": "zaguan",
 	  "descripcion": "Un ejemplar desgastado con pasajes marcados."
 	},
 	"pista_rosario": {
 	  "nombre": "Rosario de Madera",
-	  "propietario": "calixto",
+	  "propietario": "Calixto",
 	  "ubicacion_original": "despacho",
 	  "descripcion": "Cuentas de madera unidas por un cordel sencillo."
 	},
 	"pista_cirio": {
 	  "nombre": "Cirio Pascual",
-	  "propietario": "calixto",
+	  "propietario": "Calixto",
 	  "ubicacion_original": "caballerizas",
 	  "descripcion": "Una vela gruesa de cera de abeja, parcialmente consumida."
 	},
 	"pista_engrane": {
 	  "nombre": "Engrane Dentado",
-	  "propietario": "eulalio",
+	  "propietario": "Eulalio",
 	  "ubicacion_original": "despacho",
 	  "descripcion": "Una pieza mecánica de precisión cubierta de aceite."
 	},
 	"pista_llave_inglesa": {
 	  "nombre": "Llave Inglesa",
-	  "propietario": "eulalio",
+	  "propietario": "Eulalio",
 	  "ubicacion_original": "capilla",
 	  "descripcion": "Herramienta de hierro pesado, esencial para el mantenimiento."
 	},
 	"pista_planos": {
 	  "nombre": "Planos Técnicos",
-	  "propietario": "eulalio",
+	  "propietario": "Eulalio",
 	  "ubicacion_original": "caballerizas",
 	  "descripcion": "Diagramas detallados del sistema de vapor de la hacienda."
 	},
 	"pista_latigo": {
 	  "nombre": "Látigo de Cuero",
-	  "propietario": "basilio",
+	  "propietario": "Basilio",
 	  "ubicacion_original": "capilla",
 	  "descripcion": "Un látigo largo usado por el capataz para guiar al ganado."
 	},
 	"pista_espuelas": {
 	  "nombre": "Espuelas de Plata",
-	  "propietario": "basilio",
+	  "propietario": "Basilio",
 	  "ubicacion_original": "alambiques",
 	  "descripcion": "Piezas metálicas que tintinean al menor movimiento."
 	},
 	"pista_sello_ganado": {
 	  "nombre": "Sello de Hierro",
-	  "propietario": "basilio",
+	  "propietario": "Basilio",
 	  "ubicacion_original": "caballerizas",
 	  "descripcion": "Hierro para marcar el ganado con el emblema de la hacienda."
 	},
 	"pista_sombrero": {
 	  "nombre": "Sombrero de Paja",
-	  "propietario": "juan",
+	  "propietario": "Juan",
 	  "ubicacion_original": "zaguan",
 	  "descripcion": "Protección sencilla contra el sol, algo maltratada por el uso."
 	},
 	"pista_bule_agua": {
 	  "nombre": "Bule para Agua",
-	  "propietario": "juan",
+	  "propietario": "Juan",
 	  "ubicacion_original": "despacho",
 	  "descripcion": "Un recipiente natural para transportar agua fresca."
 	},
 	"pista_paliacate": {
 	  "nombre": "Paliacate Rojo",
-	  "propietario": "juan",
+	  "propietario": "Juan",
 	  "ubicacion_original": "alambiques",
 	  "descripcion": "Pañuelo de tela usado para limpiarse el sudor del campo."
 	}

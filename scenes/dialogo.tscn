@@ -18,6 +18,7 @@ scale = Vector2(1.2096355, 1.2148439)
 texture = ExtResource("1_qv0hs")
 
 [node name="Patio" type="Sprite2D" parent="." unique_id=1352707719]
+visible = false
 texture_filter = 1
 texture_repeat = 1
 position = Vector2(848.15967, 289.00003)

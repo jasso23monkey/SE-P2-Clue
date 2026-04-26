@@ -31,21 +31,29 @@ func _input(event):
 		avanzar()
 
 func avanzar():
-	# 1. Lógica de transición de escena (Solo ocurre en prologo_1)
-	# Si llegamos al final de la lista de prologo_1, saltamos al diálogo
+	# 1. Lógica de transición al Diálogo (Solo prologo_1)
 	if Global.fase_prologo == "prologo_1" and indice_actual >= datos_fase.size() - 1:
 		cambiar_a_escena_dialogo()
 		return
 
-	# 2. Lógica de avance de texto normal
+	# 2. NUEVA LÓGICA: Transición al Hub (Solo prologo_2)
+	# Cuando el jugador da el último clic en el texto del prólogo 2
+	if Global.fase_prologo == "prologo_2" and indice_actual >= datos_fase.size() - 1:
+		ir_al_hub()
+		return
+
+	# 3. Lógica de avance de texto normal
 	if indice_actual < datos_fase.size() - 1:
 		indice_actual += 1
-		Global.indice_historia = indice_actual # Actualizamos el Global por seguridad
+		Global.indice_historia = indice_actual
 		mostrar_texto()
-	else:
-		# Aquí llegas cuando termina el prologo_2 o cualquier fase final
-		print("Fin de la narrativa de esta fase.")
-		# Podrías llamar a una función para cambiar a modo investigación aquí
+
+# Función para cambiar al mapa automáticamente
+func ir_al_hub():
+	print("Prólogo completado. Entrando al modo investigación.")
+	# Opcional: Puedes resetear el índice de historia aquí si lo necesitas
+	Global.indice_historia = 0 
+	get_tree().change_scene_to_file("res://scenes/hub.tscn")
 
 func mostrar_texto():
 	# Verificamos que el índice sea válido para evitar errores de Array

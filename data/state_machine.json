@@ -12,7 +12,7 @@
 	},
 	"prologo_2": {
 	  "escena": "res://scenes/historia.tscn",
-	  "siguiente_estado": "mapa_investigacion",
+	  "siguiente_estado": "hub",
 	  "descripcion": "La tragedia y cierre del prólogo"
 	},
 	"hub": {

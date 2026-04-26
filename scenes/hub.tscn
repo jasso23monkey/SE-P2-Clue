@@ -110,6 +110,7 @@ stretch_mode = 5
 
 [node name="Estandar_izq" type="PanelContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo2" unique_id=1590782379]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -131,6 +132,27 @@ layout_mode = 2
 texture = ExtResource("5_bfqb0")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="Notas_izq" type="PanelContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo2" unique_id=1161964335]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo2/Notas_izq" unique_id=859711982]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="Pistas" type="ItemList" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo2/Notas_izq/MarginContainer" unique_id=1537878835]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_d1od2")
 
 [node name="Fondo" type="TextureRect" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer" unique_id=1745068716]
 layout_mode = 2
@@ -155,12 +177,15 @@ text = "x"
 
 [node name="Estandar_der" type="PanelContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo" unique_id=523816477]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -424.0
+offset_left = -1.0
+offset_top = -438.0
+offset_right = 1.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -230,10 +255,102 @@ theme = ExtResource("2_d1od2")
 text = "Ir"
 icon_alignment = 1
 
+[node name="Notas_der" type="PanelContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo" unique_id=722093655]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -437.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der" unique_id=1183638542]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 60
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer" unique_id=1951858496]
+layout_mode = 2
+
+[node name="Objeto" type="Label" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer" unique_id=1376648086]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"libro_titulo"
+text = "OBJETO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer" unique_id=1312562565]
+custom_minimum_size = Vector2(80, 25)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer" unique_id=839425307]
+clip_contents = true
+layout_direction = 1
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1474462422]
+layout_mode = 2
+
+[node name="Sospecho" type="Label" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2027955251]
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"libro_texto"
+text = "Sospechoso:"
+horizontal_alignment = 1
+
+[node name="sospechoso" type="Label" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=271237764]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"libro_texto"
+text = "N/A"
+
+[node name="Control" type="Control" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer" unique_id=332329586]
+custom_minimum_size = Vector2(25, 25)
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1866591023]
+layout_mode = 2
+
+[node name="Lugara" type="Label" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=2078366909]
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"libro_texto"
+text = "Lugar:"
+
+[node name="lugar" type="Label" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=446805910]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"libro_texto"
+text = "N/A"
+
+[node name="Control2" type="Control" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer" unique_id=1745770555]
+custom_minimum_size = Vector2(80, 25)
+layout_mode = 2
+
+[node name="Info" type="RichTextLabel" parent="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Notas_der/MarginContainer/VBoxContainer" unique_id=567160055]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_d1od2")
+theme_type_variation = &"rich_libro"
+text = "N/A"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="CanvasLayer/Opciones/MarginContainer/HBoxContainer/Mapa" to="." method="_on_mapa_pressed"]
 [connection signal="pressed" from="CanvasLayer/Opciones/MarginContainer/HBoxContainer/Interrogar" to="." method="_on_interrogar_pressed"]
 [connection signal="pressed" from="CanvasLayer/Opciones/MarginContainer/HBoxContainer/Notas" to="." method="_on_notas_pressed"]
 [connection signal="pressed" from="CanvasLayer/Opciones/MarginContainer/HBoxContainer/Acusar" to="." method="_on_acusar_pressed"]
+[connection signal="item_selected" from="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo2/Notas_izq/MarginContainer/Pistas" to="." method="_on_pistas_item_selected"]
 [connection signal="pressed" from="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Estandar_der/MarginContainer/VBoxContainer/HBoxContainer/izquierda" to="." method="_on_izquierda_pressed"]
 [connection signal="pressed" from="CanvasLayer/Libro/MarginContainer/HBoxContainer/Fondo/Estandar_der/MarginContainer/VBoxContainer/HBoxContainer/derecha" to="." method="_on_derecha_pressed"]
