@@ -22,6 +22,7 @@ var lista_datos = [] # Aquí guardaremos las llaves del JSON (ej: ["despacho", "
 var indice_actual = 0
 var dict_referencia : Dictionary = {} 
 var categoria_actual = "" # "lugares" o "sospechosos"
+var causa = ""
 
 func _ready():
 	# Estado inicial: Botones visibles, libro oculto
@@ -107,25 +108,53 @@ func actualizar_interfaz():
 func llenar_item_list_pistas():
 	item_list_notas.clear()
 	
-	if Global.pistas_descubiertas.size() == 0:
-		item_list_notas.add_item("Sin notas...")
-		return
-		
-	for id_pista in Global.pistas_descubiertas:
-		var info = buscar_info_pista_completa(id_pista)
-		var idx = item_list_notas.add_item(info["nombre"])
-		# Guardamos el ID en la metadata para saber cuál es al hacer clic
-		item_list_notas.set_item_metadata(idx, id_pista)
+	# --- NOTA PRECARGADA: CAUSA DE MUERTE ---
+	# Usamos el efecto guardado en Global para generar la primera entrada
+	var causa_idx = item_list_notas.add_item("NOTA MÉDICA: Causa de Muerte")
+	item_list_notas.set_item_metadata(causa_idx, "causa_muerte") # ID especial
+	
+	# --- RESTO DE PISTAS ENCONTRADAS ---
+	if Global.pistas_descubiertas.size() > 0:
+		for id_pista in Global.pistas_descubiertas:
+			var info = buscar_info_pista_completa(id_pista)
+			var idx = item_list_notas.add_item(info["nombre"])
+			item_list_notas.set_item_metadata(idx, id_pista)
 
 # Esta función la conectas a la señal "item_selected" de tu ItemList (%Pistas)
 func _on_pistas_item_selected(index: int) -> void:
 	var id_pista = item_list_notas.get_item_metadata(index)
+	
+	# --- SOLUCIÓN AL ERROR: CASO ESPECIAL ---
+	if id_pista == "causa_muerte":
+		label_detalle_titulo.text = "INFORME FORENSE"
+		label_sospechoso.text = "" # Aquí asignamos manualmente para evitar el error
+		label_lugar.text = ""
+		
+	if Global.caso_actual.has("efecto"):
+		causa = Global.caso_actual["efecto"]
+	else:
+		# Si por alguna razón el diccionario está vacío, lo forzamos una última vez
+		Global.generar_misterio_aleatorio()
+		causa = Global.caso_actual["efecto"]
+	
+	label_detalle_info.text = "Tras examinar el cuerpo, se determina que la causa de muerte fue: " + causa.to_upper() + "."
+	return
+
+	# --- BÚSQUEDA NORMAL (Solo para pistas del JSON) ---
 	var info = buscar_info_pista_completa(id_pista)
 	
-	# Usamos tus variables específicas del árbol de nodos
-	label_detalle_titulo.text = info["nombre"]
-	label_sospechoso.text =  info["propietario"]
-	label_lugar.text =  info["ubicacion_original"]
+	# Verificamos que la info no sea nula para evitar más errores
+	if info == null:
+		return
+
+	if info.has("tipo"):
+		label_detalle_titulo.text = "[!] " + info["nombre"].to_upper()
+	else:
+		label_detalle_titulo.text = info["nombre"]
+
+	# Ahora estas líneas ya no darán error porque la nota forense nunca llega aquí
+	label_sospechoso.text = info["propietario"]
+	label_lugar.text = info["ubicacion_original"]
 	label_detalle_info.text = info["descripcion"]
 
 # Función para buscar en el JSON
