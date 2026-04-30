@@ -132,5 +132,38 @@
 	  "ubicacion_original": "alambiques",
 	  "descripcion": "Pañuelo de tela usado para limpiarse el sudor del campo."
 	}
-  }
+  },
+"pistas_condenatorias": {
+  "casilda": {
+	"nombre": "Testamento Roto",
+	"descripcion": "Fragmentos de un documento legal donde se lee claramente que el único sucesor de la hacienda sería Amado III, dejando fuera a los demás.",
+	"propietario": "Casilda",
+	"tipo": "evidencia_directa"
+  },
+  "calixto": {
+	"nombre": "Estampa de Santo Quemada",
+	"descripcion": "Una imagen religiosa con los bordes carbonizados y manchas extrañas. Parece haber sido utilizada en un ritual o conjuro oscuro.",
+	"propietario": "Calixto",
+	"tipo": "evidencia_directa"
+  },
+  "eulalio": {
+	"nombre": "Guantes con Aceite",
+	"descripcion": "Guantes de cuero tosco y muy gastados, manchados con aceite industrial negro. Solo alguien que opera maquinaria pesada los usaría.",
+	"propietario": "Eulalio",
+	"tipo": "evidencia_directa"
+  },
+  "basilio": {
+	"nombre": "Huellas de Lodo Fresco",
+	"descripcion": "Marcas de botas de trabajo pesado que entran a la casona. El lodo es arcilloso, típico de los caminos que solo el capataz recorre a caballo.",
+	"propietario": "Basilio",
+	"tipo": "evidencia_directa"
+  },
+  "juan": {
+  "nombre": "Morral de Yute",
+  "descripcion": "Un morral que, en lugar de comida, contiene una tierra negra y fina. Desprende un calor residual y un olor a azufre tan fuerte que marea al acercarse.",
+  "propietario": "Juan",
+  "tipo": "evidencia_directa"
+}
+}
+
 }

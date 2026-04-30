@@ -124,51 +124,63 @@ func llenar_item_list_pistas():
 func _on_pistas_item_selected(index: int) -> void:
 	var id_pista = item_list_notas.get_item_metadata(index)
 	
-	# --- SOLUCIÓN AL ERROR: CASO ESPECIAL ---
+	# --- CASO ESPECIAL NOTA MÉDICA ---
 	if id_pista == "causa_muerte":
 		label_detalle_titulo.text = "INFORME FORENSE"
-		label_sospechoso.text = "" # Aquí asignamos manualmente para evitar el error
-		label_lugar.text = ""
-		
-	if Global.caso_actual.has("efecto"):
-		causa = Global.caso_actual["efecto"]
-	else:
-		# Si por alguna razón el diccionario está vacío, lo forzamos una última vez
-		Global.generar_misterio_aleatorio()
-		causa = Global.caso_actual["efecto"]
-	
-	label_detalle_info.text = "Tras examinar el cuerpo, se determina que la causa de muerte fue: " + causa.to_upper() + "."
-	return
+		label_sospechoso.text = "N/A"
+		label_lugar.text = "N/A"
+		label_detalle_info.text = "Causa de muerte: " + Global.caso_actual.get("efecto", "DESCONOCIDO").to_upper()
+		return
 
-	# --- BÚSQUEDA NORMAL (Solo para pistas del JSON) ---
+	# --- BÚSQUEDA NORMAL ---
 	var info = buscar_info_pista_completa(id_pista)
 	
-	# Verificamos que la info no sea nula para evitar más errores
+	# Si la info es null (por seguridad), limpiamos y salimos
 	if info == null:
 		return
 
-	if info.has("tipo"):
+	# Título: Si es evidencia directa, ponemos el marcador [!]
+	if info.get("tipo") == "evidencia_directa" or info.get("tipo") == "arma":
 		label_detalle_titulo.text = "[!] " + info["nombre"].to_upper()
 	else:
 		label_detalle_titulo.text = info["nombre"]
 
-	# Ahora estas líneas ya no darán error porque la nota forense nunca llega aquí
-	label_sospechoso.text = info["propietario"]
-	label_lugar.text = info["ubicacion_original"]
-	label_detalle_info.text = info["descripcion"]
+	# --- ASIGNACIÓN DE DATOS (PROTEGIDA CONTRA ERRORES) ---
+	label_sospechoso.text = info.get("propietario", "Desconocido")
+	
+	# SOLUCIÓN AL ERROR: Si no tiene ubicación_original, usamos el lugar del crimen del Global
+	label_lugar.text = info.get("ubicacion_original", Global.caso_actual["lugar"])
+	
+	label_detalle_info.text = info.get("descripcion", "Sin descripción.")
 
 # Función para buscar en el JSON
 func buscar_info_pista_completa(id_pista):
 	var file = FileAccess.open("res://data/clues.json", FileAccess.READ)
+	if not file:
+		return null
+		
 	var datos = JSON.parse_string(file.get_as_text())
 	
-	# Buscamos en ambas categorías del JSON
+	# 1. Buscamos en pistas_armas
 	if datos["pistas_armas"].has(id_pista):
 		return datos["pistas_armas"][id_pista]
-	elif datos["pistas_personales"].has(id_pista):
+	
+	# 2. Buscamos en pistas_personales
+	if datos["pistas_personales"].has(id_pista):
 		return datos["pistas_personales"][id_pista]
 	
-	return {"nombre": "Desconocido", "descripcion": "", "sospechoso": "N/A", "ubicacion_original": "N/A"}
+	# 3. BUSCAMOS EN LA NUEVA CATEGORÍA (Para Juan, Calixto, etc.)
+	if datos.has("pistas_condenatorias") and datos["pistas_condenatorias"].has(id_pista):
+		return datos["pistas_condenatorias"][id_pista]
+	
+	# Si no se encuentra en ningún lado, devolvemos un diccionario con llaves vacías
+	# Esto evita el error "Invalid access to property 'propietario'"
+	return {
+		"nombre": "Desconocido", 
+		"descripcion": "Sin detalles.", 
+		"propietario": "N/A", 
+		"ubicacion_original": "N/A"
+	}
 
 
 # --- LÓGICA DE LAS FLECHAS < > ---

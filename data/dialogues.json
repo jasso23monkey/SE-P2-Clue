@@ -78,5 +78,43 @@
 	  "texto": "Buenas noches tenga, señor oficial. El patrón ya no grita, ¿verdad? Se siente un silencio... sabroso. Dicen que la fuente se apagó, pero yo digo que finalmente descansó de tanta mentira. No me tema, yo solo soy un pobre jimador que sabe que, al final del día, todos terminamos bajo la misma tierra.",
 	  "expresion": "1"
 	}
+  },
+"interrogatorio": {
+  "casilda": {
+	"coartada": "Estaba en mi despacho revisando las cuentas de la hacienda. Alguien tiene que asegurar el futuro ahora que mi padre no está.",
+	"opinion_culpable": "Eulalio ha estado muy ambicioso últimamente, sus máquinas consumen más de lo que producen.",
+	"reaccion_arma": "Esa daga es mía, sí. Es una reliquia de familia, pero no significa que la haya usado para algo tan vulgar.",
+	"presion_general": "Mis relaciones con mi padre eran puramente profesionales. Él confiaba en mi juicio sobre todos los demás.",
+	"pista_maestra": "[shake rate=20.0 level=10]¡Ese testamento debió ser destruido! ¡Ese viejo loco no podía dejarnos sin nada después de años de soportarlo![/shake]"
+  },
+  "calixto": {
+	"coartada": "Me encontraba en la capilla, elevando plegarias por la salud espiritual de Don Amado. Las sombras ya acechaban.",
+	"opinion_culpable": "He visto a Juan merodear por lugares que no le corresponden. Hay una oscuridad antigua en sus ojos.",
+	"reaccion_arma": "El crucifijo es un símbolo de fe, comisario. Que tenga una marca no implica que haya servido para la violencia.",
+	"presion_general": "Don Amado era un hombre de ciencia, y yo de fe. Nuestras discusiones eran por la salvación de su alma.",
+	"pista_maestra": "[shake rate=15.0 level=8]¡Esa estampa...! No es lo que parece. A veces hay que combatir el fuego con fuego, y el pecado con sacrificios...[/shake]"
+  },
+  "eulalio": {
+	"coartada": "Estaba ajustando la presión de la caldera principal. Un error de un milímetro y esta hacienda volaría por los aires.",
+	"opinion_culpable": "Basilio siempre ha odiado a Don Amado. Es un hombre resentido que prefiere la fuerza a la razón.",
+	"reaccion_arma": "Esa pistola de vapor es un prototipo. Solo yo sé cómo operarla, y le aseguro que no deja ese tipo de marcas.",
+	"presion_general": "Él frenaba el progreso. Yo quería modernizar, él quería mantener tradiciones obsoletas.",
+	"pista_maestra": "[shake rate=25.0 level=12]¿Mis guantes? ¡Aceite industrial! ¡Es normal en mi trabajo! No... no tienen por qué estar manchados de... de eso.[/shake]"
+  },
+  "basilio": {
+	"coartada": "Cerrando los corrales y asegurando el ganado. El trabajo de un capataz no termina porque haya una fiesta.",
+	"opinion_culpable": "Casilda. Esa mujer tiene hielo en las venas y siempre quiso el control total de las tierras.",
+	"reaccion_arma": "Una soga de ixtle se encuentra en cualquier esquina de este lugar. No es prueba de nada.",
+	"presion_general": "Él me pagaba por mi lealtad, pero la lealtad tiene un precio que él ya no quería pagar.",
+	"pista_maestra": "[shake rate=20.0 level=10]¿Lodo arcilloso? He caminado por todos lados hoy... pero... ¡Esa bota coincide! ¡Maldita sea mi suerte![/shake]"
+  },
+  "juan": {
+	"coartada": "Afilando mi coa cerca de las caballerizas. La zafra no espera a los muertos, comisario.",
+	"opinion_culpable": "El Padre Calixto habla mucho de Dios, pero sus manos tiemblan cuando nadie lo mira.",
+	"reaccion_arma": "La coa es mi herramienta de vida. Sin ella no soy nada. Que esté afilada es mi orgullo, no un crimen.",
+	"presion_general": "Yo solo soy un trabajador. El patrón era el sol y nosotros las sombras. Cuando el sol se apaga, las sombras crecen.",
+	"pista_maestra": "[shake rate=30.0 level=15]¡Ese olor! ¡Aléjalo de mí! La tierra negra... ella me pidió que lo hiciera. ¡El azufre no miente, el patrón debía volver al polvo![/shake]"
   }
+}
+
 }

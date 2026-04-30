@@ -35,7 +35,7 @@ layout_mode = 2
 theme = ExtResource("1_3r1ne")
 theme_type_variation = &"dialogos"
 bbcode_enabled = true
-text = "Pruebita [shake]xd dí[/wave]
+text = "Pruebita [shake]xd dí[shake]
 "
 horizontal_alignment = 1
 vertical_alignment = 1

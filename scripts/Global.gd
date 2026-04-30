@@ -25,42 +25,59 @@ func generar_misterio_aleatorio():
 	var file_story = FileAccess.open("res://data/story.json", FileAccess.READ)
 	var datos_story = JSON.parse_string(file_story.get_as_text())
 	
-	# 2. Cargar clues_4.json para sacar las armas
+	# 2. Cargar clues_4.json para sacar las armas y pistas
 	var file_clues = FileAccess.open("res://data/clues.json", FileAccess.READ)
 	var datos_clues = JSON.parse_string(file_clues.get_as_text())
 	
 	# --- GENERACIÓN INDEPENDIENTE ---
-	# Elegimos culpable de la lista de finales (excepto 'derrota')
 	var lista_finales = datos_story["finales"].keys()
 	lista_finales.erase("derrota")
 	var id_culpable = lista_finales[randi() % lista_finales.size()]
 	
-	# Elegimos arma real de pistas_armas
 	var lista_armas = datos_clues["pistas_armas"].keys()
 	var id_arma = lista_armas[randi() % lista_armas.size()]
 	
-	# --- EXTRACCIÓN DEL EFECTO ---
-	# Accedemos al diccionario del arma elegida para obtener su efecto específico
 	efecto_arma_real = datos_clues["pistas_armas"][id_arma]["efecto"]
 	
-	# Elegimos lugar del crimen[cite: 9]
 	var lista_lugares = datos_story["lugares"].keys()
 	var id_lugar = lista_lugares[randi() % lista_lugares.size()]
 	
-	# Guardamos la "Verdad" de esta partida incluyendo el efecto
+	# --- LÓGICA DE LA PISTA ACUSATORIA EXTRA ---
+	# --- LÓGICA DE LA PISTA ACUSATORIA EXTRA ---
+	var id_pista_maestra = ""
+	
+	# Accedemos a la sección de pistas_condenatorias usando el ID del culpable
+	
+	if datos_clues.has("pistas_condenatorias") and datos_clues["pistas_condenatorias"].has(id_culpable):
+		# 1. Usamos el id_culpable directamente como ID de la pista (ej: "juan")
+		id_pista_maestra = id_culpable 
+		
+		# 2. Sacamos la info
+		var info_pista_extra = datos_clues["pistas_condenatorias"][id_pista_maestra].duplicate()
+		
+		# 3. Le ponemos la ubicación del crimen
+		info_pista_extra["ubicacion_original"] = id_lugar
+		
+		# 4. LA CLAVE: La guardamos en el diccionario de pistas con el nombre del sospechoso
+		# Así, cuando busques "juan" en el diccionario de pistas, lo encontrará.
+		datos_clues["pistas_personales"][id_pista_maestra] = info_pista_extra
+	
+	# Guardamos todo en el diccionario del caso
 	caso_actual = {
 		"culpable": id_culpable,
 		"arma": id_arma,
 		"lugar": id_lugar,
-		"efecto": efecto_arma_real # Guardado para referencia rápida
+		"efecto": efecto_arma_real,
+		"pista_maestra": id_pista_maestra 
 	}
 	
 	# Debug para verificar en consola
 	print("--- MISTERIO GENERADO ---")
 	print("Culpable: ", caso_actual["culpable"])
 	print("Arma: ", caso_actual["arma"])
-	print("Efecto: ", efecto_arma_real) # Ejemplo: "asfixia" o "corte profundo"[cite: 11]
+	print("Efecto: ", efecto_arma_real) 
 	print("Lugar: ", caso_actual["lugar"])
+	print("Pista Maestra Generada: ", caso_actual["pista_maestra"])
 
 		
 # Función para reiniciar valores si el jugador vuelve a empezar el juego

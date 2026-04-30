@@ -8,6 +8,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_i84mh"]
 radius = 16.763054
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ytx3s"]
+radius = 12.0
+
 [node name="LugarBase" type="Node2D" unique_id=1096164667]
 script = ExtResource("1_ytx3s")
 
@@ -105,7 +108,7 @@ debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
 
 [node name="Pista_4" type="Area2D" parent="CanvasLayer" unique_id=603552251]
 unique_name_in_owner = true
-position = Vector2(1211, 516)
+position = Vector2(1166, 499)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Pista_4" unique_id=1311339739]
 position = Vector2(-88, 15)
@@ -116,5 +119,18 @@ texture = ExtResource("2_ytx3s")
 position = Vector2(-87, 16)
 shape = SubResource("CircleShape2D_i84mh")
 debug_color = Color(0.9647059, 0.09019608, 0.05882353, 0.25490198)
+
+[node name="extra" type="Area2D" parent="CanvasLayer" unique_id=1344461017]
+unique_name_in_owner = true
+position = Vector2(970, 476)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/extra" unique_id=148167793]
+position = Vector2(-1.5258789e-05, -5.0000305)
+scale = Vector2(0.058, 0.058)
+texture = ExtResource("2_ytx3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/extra" unique_id=1075223901]
+position = Vector2(-2, -7)
+shape = SubResource("CircleShape2D_ytx3s")
 
 [connection signal="pressed" from="CanvasLayer/Regresar" to="." method="_on_regresar_pressed"]
