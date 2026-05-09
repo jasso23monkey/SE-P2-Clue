@@ -10,10 +10,12 @@ extends Node2D
 
 var pistas_encontradas_esta_sesion : int = 0
 var datos_clues : Dictionary = {}
+var datos_story : Dictionary = {}
 var ids_en_esta_escena : Array = []
 
 func _ready():
 	cargar_json_pistas()
+	cargar_json_story()
 	configurar_habitacion()
 	conectar_señales_lupas()
 
@@ -24,11 +26,24 @@ func cargar_json_pistas():
 	else:
 		print("Error: No se encontró clues.json")
 
+func cargar_json_story():
+	var file = FileAccess.open("res://data/story.json", FileAccess.READ)
+	if file:
+		datos_story = JSON.parse_string(file.get_as_text())
+	else:
+		print("Error: No se encontró story.json")
+
 func configurar_habitacion():
 	var zona = Global.habitacion_actual
 	
+		# 1. Cambiar el fondo según la habitación seleccionada desde el Hub
+	if datos_story.has("lugares") and datos_story["lugares"].has(zona):
+		var ruta_fondo = datos_story["lugares"][zona]["imagen"]
+		textura_fondo.texture = load(ruta_fondo)
+	else:
+		print("No se encontró la habitación en story.json: ", zona)
 	# 1. Cambiar el fondo
-	textura_fondo.texture = load("res://assets/sprites/backgrounds/" + zona + ".jpeg")
+	#textura_fondo.texture = load("res://assets/sprites/backgrounds/patio.jpeg")
 	
 	# 2. Filtrar IDs de pistas normales (Armas y Personales)
 	ids_en_esta_escena.clear()

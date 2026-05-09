@@ -11,6 +11,7 @@
 script = ExtResource("1_4dly5")
 
 [node name="PatioLuz" type="Sprite2D" parent="." unique_id=415426835]
+unique_name_in_owner = true
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(844.4167, 290.49994)
@@ -18,6 +19,7 @@ scale = Vector2(1.2096355, 1.2148439)
 texture = ExtResource("1_qv0hs")
 
 [node name="Patio" type="Sprite2D" parent="." unique_id=1352707719]
+unique_name_in_owner = true
 visible = false
 texture_filter = 1
 texture_repeat = 1

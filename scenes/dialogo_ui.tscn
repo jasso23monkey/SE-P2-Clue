@@ -29,7 +29,20 @@ grow_vertical = 0
 theme = ExtResource("1_3r1ne")
 theme_type_variation = &"panel_dialogo"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo" unique_id=1596096708]
+[node name="MarginContainer" type="MarginContainer" parent="Dialogo" unique_id=680091579]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 10
+
+[node name="ItemList" type="ItemList" parent="Dialogo/MarginContainer" unique_id=1437866612]
+unique_name_in_owner = true
+layout_mode = 2
+auto_width = true
+auto_height = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dialogo/MarginContainer" unique_id=1596096708]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("1_3r1ne")
@@ -64,3 +77,18 @@ vertical_alignment = 1
 position = Vector2(1119.9999, 601.00006)
 scale = Vector2(1.8666667, 1.0666667)
 polygon = PackedVector2Array(0, 0, 10, 15, 0, 30)
+
+[node name="Regresar" type="Button" parent="." unique_id=1090874304]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_bottom = 68.0
+grow_horizontal = 0
+theme = ExtResource("1_3r1ne")
+text = "REGRESAR"
+
+[connection signal="item_selected" from="Dialogo/MarginContainer/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="pressed" from="Regresar" to="." method="_on_regresar_pressed"]
