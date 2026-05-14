@@ -360,12 +360,35 @@ func _on_next_pressed() -> void:
 		print("Debes seleccionar sospechoso, arma y lugar antes de acusar.")
 		return
 	
-	var culpable_correcto = acusado_sospechoso == Global.caso_actual["culpable"]
-	var arma_correcta = acusado_arma == Global.caso_actual["arma_real"]
-	var lugar_correcto = acusado_lugar == Global.caso_actual["escena_crimen"]
+	# Tomamos los datos correctos del caso.
+	var culpable_real = Global.caso_actual.get("culpable", "")
+	var arma_real = Global.caso_actual.get("arma_real", "")
+	var lugar_real = Global.caso_actual.get("escena_crimen", "")
+	
+	# Si tu Global guardó el arma como "arma" en vez de "arma_real",
+	# usamos esa como respaldo.
+	if arma_real == "":
+		arma_real = Global.caso_actual.get("arma", "")
+	
+	# Si tu Global guardó el lugar como "lugar" en vez de "escena_crimen",
+	# usamos esa como respaldo.
+	if lugar_real == "":
+		lugar_real = Global.caso_actual.get("lugar", "")
+	
+	var culpable_correcto = acusado_sospechoso == culpable_real
+	var arma_correcta = acusado_arma == arma_real
+	var lugar_correcto = acusado_lugar == lugar_real
+	
+	print("----- ACUSACIÓN -----")
+	print("Acusaste a: ", acusado_sospechoso)
+	print("Culpable real: ", culpable_real)
+	print("Arma acusada: ", acusado_arma)
+	print("Arma real: ", arma_real)
+	print("Lugar acusado: ", acusado_lugar)
+	print("Lugar real: ", lugar_real)
 	
 	if culpable_correcto and arma_correcta and lugar_correcto:
-		Global.final_actual = Global.caso_actual["culpable"]
+		Global.final_actual = culpable_real
 	else:
 		Global.final_actual = "derrota"
 	

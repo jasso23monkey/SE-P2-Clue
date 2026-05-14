@@ -16,7 +16,6 @@ var sospechoso_acusado := ""
 var arma_acusada := ""
 var lugar_acusado := ""
 var final_actual := ""
-
 var sospechoso_mencionado : String = ""
 # Variable para manejar eventos aleatorios (el sospechoso)
 var sospechoso_interrumpio : bool = false
